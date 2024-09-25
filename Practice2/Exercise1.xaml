@@ -1,0 +1,21 @@
+﻿<Window x:Class="Practice2.Exercise1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Practice2"
+        mc:Ignorable="d"
+        Closed="Window_Closed"
+        ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen"
+        Title="Exercise #1" Height="480" Width="640">
+    <Grid HorizontalAlignment="Left" Width="640" Height="464" VerticalAlignment="Center">
+        <Label Content="Input n (n &lt;= 100, n ⊂ N):" TextBlock.FontSize="20" FontFamily="Times New Roman" Margin="10,216,408,215"/>
+        <TextBox Name="tb_input" Margin="232,0,24,0" TextBlock.FontSize="20" FontFamily="Times New Roman" VerticalAlignment="Center" TextChanged="tb_input_TextChanged"/>
+        <TextBox Name="tb_output" TextWrapping="Wrap" Margin="84,254,24,83" IsReadOnly="True" TextBlock.FontSize="20" FontFamily="Times New Roman"/>
+        <Label Content="Output:" TextBlock.FontSize="20" HorizontalAlignment="Left" FontFamily="Times New Roman" Margin="10,254,0,0" VerticalAlignment="Top"/>
+        <Button Content="Execute" Margin="234,397,234,20" TextBlock.Foreground ="Black" TextBlock.FontSize="20" FontFamily="Times New Roman" Click="Button_Click"/>
+        <Label Content="Task:" TextBlock.FontSize="20" FontFamily="Times New Roman" Margin="10,10,566,421"/>
+        <TextBox x:Name="tb_output_Copy" TextWrapping="Wrap" Margin="10,48,24,304" IsReadOnly="True" TextBlock.FontSize="20" FontFamily="Times New Roman" Text="Вывести на экран число 2n!, n &lt;= 100, n - натуральное."/>
+        <Label Content="Solution:" TextBlock.FontSize="20" FontFamily="Times New Roman" Margin="10,183,530,248"/>
+    </Grid>
+</Window>
