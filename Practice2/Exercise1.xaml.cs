@@ -27,9 +27,7 @@ namespace Practice2
         }
 
         private void Window_Closed(object sender, EventArgs e)
-        {
-            MainWindow.Instance.Show();
-        }
+            => MainWindow.Instance.Show();
 
         private static BigInteger GetFactorial(int value)
         {
@@ -53,6 +51,9 @@ namespace Practice2
 
         private void tb_input_TextChanged(object sender, TextChangedEventArgs e)
         {
+            if (tb_input.Background == Brushes.White)
+                return;
+
             tb_input.Background = Brushes.White;
             tb_input.Foreground = Brushes.Black;
         }

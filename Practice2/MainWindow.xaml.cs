@@ -1,13 +1,4 @@
-﻿using System.Text;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+﻿using System.Windows;
 
 namespace Practice2
 {
@@ -25,11 +16,19 @@ namespace Practice2
             Instance = this;
         }
 
-        private void Button1_Click(object sender, RoutedEventArgs e)
+        private void SwitchWindow(Window to)
         {
-            var exercise1 = new Exercise1();
             Hide();
-            exercise1.Show();
+            to.Show();
         }
+
+        private void Button1_Click(object sender, RoutedEventArgs e)
+            => SwitchWindow(new Exercise1());
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+            => SwitchWindow(new Exercise2());
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+            => SwitchWindow(new Exercise3());
     }
 }
