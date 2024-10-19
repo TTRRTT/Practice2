@@ -1,0 +1,29 @@
+﻿<Window x:Class="Practice2.Exercise5"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Practice2"
+        mc:Ignorable="d"
+        Closed="Window_Closed"
+        ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen"
+        Title="Exercise5" Height="480" Width="640">
+    <Grid>
+        <Label Content="Columns:" TextBlock.FontSize="20" FontFamily="Times New Roman" Margin="10,216,535,215"/>
+        <TextBox x:Name="tb_input" TextWrapping="Wrap" Margin="110,221,320,0" TextBlock.FontSize="20" FontFamily="Times New Roman" VerticalAlignment="Top" TextChanged="tb_input_TextChanged" Height="28"/>
+        <TextBox x:Name="tb_output" TextWrapping="Wrap" Margin="86,265,349,77" IsReadOnly="True" TextBlock.FontSize="20" FontFamily="Times New Roman"/>
+        <Label Content="Output:" TextBlock.FontSize="20" HorizontalAlignment="Left" FontFamily="Times New Roman" Margin="10,249,0,0" VerticalAlignment="Top"/>
+        <Button Content="Execute" Margin="234,397,234,20" TextBlock.Foreground ="Black" TextBlock.FontSize="20" FontFamily="Times New Roman" Click="Button_Click"/>
+        <Label Content="Task:" TextBlock.FontSize="20" FontFamily="Times New Roman" Margin="10,10,566,421"/>
+        <TextBox x:Name="tb_output_Copy" TextWrapping="Wrap" Margin="10,48,24,299" IsReadOnly="True" TextBlock.FontSize="20" FontFamily="Times New Roman" Text="Сгенерировать массив размером M столбцов и N строк, содержащий числа от -10 до 10. Отобразить его пользователю. Отсортировать элементы в нем по возрастанию и по убыванию. Вывести результаты сортировки в двух таблицах. Найти максимальный и минимальный элементы массива. "/>
+        <Label Content="Solution:" TextBlock.FontSize="20" FontFamily="Times New Roman" Margin="10,183,514,248"/>
+        <Label Content="Rows:" TextBlock.FontSize="20" FontFamily="Times New Roman" Margin="333,216,240,215"/>
+        <TextBox x:Name="tb_input_Copy" TextWrapping="Wrap" Margin="400,221,24,0" TextBlock.FontSize="20" FontFamily="Times New Roman" VerticalAlignment="Top" TextChanged="tb_input_TextChanged" Height="28"/>
+        <TextBox x:Name="tb_output_Copy1" TextWrapping="Wrap" Margin="296,265,141,77" IsReadOnly="True" TextBlock.FontSize="20" FontFamily="Times New Roman"/>
+        <Label Content="Min element" TextBlock.FontSize="20" HorizontalAlignment="Left" FontFamily="Times New Roman" Margin="499,259,0,0" VerticalAlignment="Top" Width="117"/>
+        <TextBox x:Name="tb_input_Copy1" TextWrapping="Wrap" Margin="504,292,24,0" TextBlock.FontSize="20" FontFamily="Times New Roman" VerticalAlignment="Top" TextChanged="tb_input_TextChanged" Height="28"/>
+        <Label Content="Max element" TextBlock.FontSize="20" HorizontalAlignment="Left" FontFamily="Times New Roman" Margin="499,326,0,0" VerticalAlignment="Top" Width="117"/>
+        <TextBox x:Name="tb_input_Copy2" TextWrapping="Wrap" Margin="504,359,24,0" TextBlock.FontSize="20" FontFamily="Times New Roman" VerticalAlignment="Top" TextChanged="tb_input_TextChanged" Height="28"/>
+
+    </Grid>
+</Window>

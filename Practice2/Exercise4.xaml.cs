@@ -5,11 +5,11 @@ using System.Windows.Media;
 namespace Practice2
 {
     /// <summary>
-    /// Interaction logic for Exercise3.xaml
+    /// Interaction logic for Exercise4.xaml
     /// </summary>
-    public partial class Exercise3 : Window
+    public partial class Exercise4 : Window
     {
-        public Exercise3()
+        public Exercise4()
         {
             InitializeComponent();
         }
@@ -25,33 +25,19 @@ namespace Practice2
             tb_output.Text = string.Empty;
         }
 
-        private bool FindStreak(string[] sequence, out int maxStreak, out int maxIndex)
+        private bool SortSequence(string[] input, out int[] result)
         {
-            maxStreak = maxIndex = 0;
-            int currentStreak = 1, currentIndex = 0;
+            result = new int[input.Length];
 
-            for (int i = 0; i < sequence.Length - 1; i++)
+            for (int i = 0; i < input.Length; i++)
             {
-                if (!int.TryParse(sequence[i], out int num)
-                    || !int.TryParse(sequence[i + 1], out int numNext))
+                if (!int.TryParse(input[i], out int x))
                     return false;
 
-                if (num != 0 && numNext != 0 && numNext % num == 0)
-                {
-                    if (currentStreak == 1)
-                        currentIndex = i;
-                    currentStreak++;
-                }
-                else
-                    currentStreak = 1;
-
-                if (currentStreak > maxStreak)
-                {
-                    maxStreak = currentStreak;
-                    maxIndex = currentIndex;
-                }
+                result[i] = x;
             }
 
+            Array.Sort(result);
             return true;
         }
 
@@ -75,8 +61,8 @@ namespace Practice2
             var stringNums = tb_input.Text.Replace(",", " ")
                 .Split(Array.Empty<char>(), StringSplitOptions.RemoveEmptyEntries);
 
-            if (FindStreak(stringNums, out int maxStreak, out int maxIndex) && maxStreak > 1)
-                tb_output.Text = string.Join(" ", stringNums.Skip(maxIndex).Take(maxStreak));
+            if (SortSequence(stringNums, out int[] result))
+                tb_output.Text = string.Join(" ", result);
             else
                 HandleWrongInput();
         }

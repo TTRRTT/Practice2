@@ -1,0 +1,23 @@
+﻿<Window x:Class="Practice2.Exercise4"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Practice2"
+        mc:Ignorable="d"
+        Closed="Window_Closed"
+        ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen"
+        Title="Exercise4" Height="480" Width="640">
+    <Grid HorizontalAlignment="Left" Width="640" Height="464" VerticalAlignment="Center">
+        <Label Content="Sequence:" TextBlock.FontSize="20" FontFamily="Times New Roman" Margin="10,221,535,210"/>
+        <TextBox Name="tb_input" TextWrapping="Wrap" Margin="110,221,24,0" TextBlock.FontSize="20" FontFamily="Times New Roman" VerticalAlignment="Top" TextChanged="tb_input_TextChanged" Height="66"/>
+        <TextBox Name="tb_output" TextWrapping="Wrap" Margin="81,320,24,75" IsReadOnly="True" TextBlock.FontSize="20" FontFamily="Times New Roman"/>
+        <Label Content="Output:" TextBlock.FontSize="20" HorizontalAlignment="Left" FontFamily="Times New Roman" Margin="10,314,0,0" VerticalAlignment="Top"/>
+        <Button Content="Execute" Margin="234,397,234,20" TextBlock.Foreground ="Black" TextBlock.FontSize="20" FontFamily="Times New Roman" Click="Button_Click"/>
+        <Label Content="Task:" TextBlock.FontSize="20" FontFamily="Times New Roman" Margin="10,10,566,421"/>
+        <TextBox x:Name="tb_output_Copy" TextWrapping="Wrap" Margin="10,48,24,304" IsReadOnly="True" TextBlock.FontSize="20" FontFamily="Times New Roman" Text="Дан массив a[1..n] и число b. Переставить числа в массиве таким образом, чтобы слева от некоторой границы стояли числа, меньшие или равные b, а справа от границы - большие или равные b."/>
+        <Label Content="Solution:" TextBlock.FontSize="20" FontFamily="Times New Roman" Margin="10,183,530,248"/>
+        <Label Content="Separator:" TextBlock.FontSize="20" FontFamily="Times New Roman" Margin="10,286,535,144"/>
+        <TextBox x:Name="tb_input_Copy" TextWrapping="Wrap" Margin="110,292,24,0" TextBlock.FontSize="20" FontFamily="Times New Roman" VerticalAlignment="Top" TextChanged="tb_input_TextChanged" Height="22"/>
+    </Grid>
+</Window>

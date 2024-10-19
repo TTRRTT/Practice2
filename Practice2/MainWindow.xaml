@@ -11,8 +11,8 @@
         <Button Content="Exercise 1" Margin="23,232,443,140" TextBlock.Foreground ="Black" TextBlock.FontSize="20" FontFamily="Times New Roman" Click="Button1_Click"></Button>
         <Button Content="Exercise 2" Margin="235,232,234,140" TextBlock.Foreground ="Black" TextBlock.FontSize="20" FontFamily="Times New Roman" Click="Button_Click"></Button>
         <Button Content="Exercise 3" Margin="441,232,28,140" TextBlock.Foreground ="Black" TextBlock.FontSize="20" FontFamily="Times New Roman" Click="Button_Click_1"></Button>
-        <Button Content="Exercise 4" Margin="128,339,340,33" TextBlock.Foreground ="Black" TextBlock.FontSize="20" FontFamily="Times New Roman"></Button>
-        <Button Content="Exercise 5" Margin="342,339,126,33" TextBlock.Foreground ="Black" TextBlock.FontSize="20" FontFamily="Times New Roman"></Button>
+        <Button Content="Exercise 4" Margin="128,339,340,33" TextBlock.Foreground ="Black" TextBlock.FontSize="20" FontFamily="Times New Roman" Click="Button_Click_2"></Button>
+        <Button Content="Exercise 5" Margin="342,339,126,33" TextBlock.Foreground ="Black" TextBlock.FontSize="20" FontFamily="Times New Roman" Click="Button_Click_3"></Button>
         <Label Content="Please, choose exercise to execute:" TextBlock.FontSize="20" HorizontalAlignment="Center" FontFamily="Times New Roman" Margin="0,172,0,0" VerticalAlignment="Top"/>
         <Label Content="Variant 2" TextBlock.FontSize="26" HorizontalAlignment="Center" FontFamily="Times New Roman" Margin="0,35,0,0" VerticalAlignment="Top"/>
         <Label Content="by Artyom Nazarov" TextBlock.FontSize="20" HorizontalAlignment="Center" FontFamily="Times New Roman" Margin="0,80,0,0" VerticalAlignment="Top"/>

@@ -30,5 +30,11 @@ namespace Practice2
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
             => SwitchWindow(new Exercise3());
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+            => SwitchWindow(new Exercise4());
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+            => SwitchWindow(new Exercise5());
     }
 }
